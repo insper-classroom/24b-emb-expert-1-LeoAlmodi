@@ -39,7 +39,7 @@ int main() {
 
     pwm_set_gpio_level(AUDIO_PIN, 0);
     uint16_t adc_raw;
-
+    gpio_init(BTN_PIN);
     gpio_set_dir(BTN_PIN, GPIO_IN);
     gpio_pull_up(BTN_PIN);
 
